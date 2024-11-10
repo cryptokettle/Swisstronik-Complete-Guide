@@ -1,0 +1,122 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IComplianceBridge",
+  "sourceName": "contracts/interfaces/IComplianceBridge.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "originChain",
+          "type": "string"
+        },
+        {
+          "internalType": "uint32",
+          "name": "verificationType",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "issuanceTimestamp",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "expirationTimestamp",
+          "type": "uint32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "proofData",
+          "type": "bytes"
+        },
+        {
+          "internalType": "string",
+          "name": "schema",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "issuerVerificationId",
+          "type": "string"
+        },
+        {
+          "internalType": "uint32",
+          "name": "version",
+          "type": "uint32"
+        }
+      ],
+      "name": "addVerificationDetails",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "issuerAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getVerificationData",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "verificationType",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "expirationTimestamp",
+          "type": "uint32"
+        },
+        {
+          "internalType": "address[]",
+          "name": "allowedIssuers",
+          "type": "address[]"
+        }
+      ],
+      "name": "hasVerification",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
